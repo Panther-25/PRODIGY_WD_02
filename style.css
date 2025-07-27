@@ -1,0 +1,101 @@
+body {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.stopwatch-container {
+    background-color: #1b263b;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #778da9;
+}
+
+.display {
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: #0d1b2a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.controls button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.controls button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#startBtn { background-color: #2a9d8f; }
+#pauseBtn { background-color: #e9c46a; }
+#resetBtn { background-color: #e76f51; }
+#lapBtn   { background-color: #415a77; }
+
+#pauseBtn {
+    display: none;
+}
+
+.laps-container h2 {
+    color: #778da9;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-top: 1px solid #415a77;
+    padding-top: 20px;
+}
+
+.laps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.laps li {
+    background-color: #0d1b2a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+
+.laps li span:first-child {
+    color: #778da9;
+}
